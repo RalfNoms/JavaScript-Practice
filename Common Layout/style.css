@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+body{
+    background-color: #dee0e3;
+}
+.heading{
+    text-align: center;
+    margin-top: 25px;
+    
+}
+.heading h1{
+    font-size: 50px;
+    color: #36455c;
+    margin-bottom: 10px;
+}
+.heading p{
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 50px;
+}
+.about-us{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+}
+.about-us img{
+   
+    max-width: 50%;
+    height: auto;
+
+}

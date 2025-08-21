@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+   <input id="userInput">
+<button onclick="checkUser()">Check</button>
+<h1 id="Demo"></h1>
+<script>
+function checkUser() {
+    let user = document.getElementById("userInput").value;
+    if(user == "admin"){
+        document.getElementById("Demo").textContent = "Welcome Admin";
+    } else {
+        document.getElementById("Demo").textContent = "You're not an admin";
+    }
+}
+
+
+
+//even and odd numbers
+//    function isEven(number){
+//      if(number / 2 === 0){
+//        return true;
+//      } else {
+//        return false;
+//    }
+// }
+//    let num =  isEven(5);
+//    document.getElementById("Demo").innerHTML = "The number is: " + num;
+
+//reversing a string
+// function reverseString(str){
+//     return str.split('').reverse().join('');
+// }
+// let str1 = reverseString("Hello");
+// let str2 = reverseString("Javascript");
+// document.getElementById("Demo").innerHTML = "The reversed string is: " + str1 + " and " + str2 ;
+  
+// function fizzBuzz(){
+//     let number = 15;
+    
+//     for(let i = 1; i<number; i++){
+//         if(i % 3 === 0 && i % 5 === 0){
+//             document.getElementById("Demo").innerHTML += "FizzBuzz<br>";
+//         } else if(i % 3 === 0){
+//             document.getElementById("Demo").innerHTML += "Fizz<br>";
+//         } else if(i % 5 === 0){
+//             document.getElementById("Demo").innerHTML += "Buzz<br>";
+//         } else {
+//             document.getElementById("Demo").innerHTML += i + "<br>";
+//         }
+
+//     }
+// }
+
+ </script>
+ 
+ 
+</body>
+</html>

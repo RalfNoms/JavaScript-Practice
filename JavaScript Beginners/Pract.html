@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <select id="people">
+        <option id="option">Select Option</option>
+        <option id="john">Jhon</option>
+        <option id="eva">eva</option>
+        <option id="addam">addam</option>
+        <option id="ryan">ryan</option>
+
+       <input id="choosenPerson">
+    </select>
+    
+    <div id="content"></div>
+    <div id="clock"></div>
+
+    <script>
+        let content =  document.getElementById("content");
+        let newpara =  document.createElement("p");
+        let text =  document.createTextNode("Hello From Textnode JavaScript");
+        
+        newpara.appendChild(text);
+        content.appendChild(newpara);
+
+       let clock = document.getElementById("clock");
+       let timer = 10;
+       let mytimer = setInterval(countdown,1000);
+
+       function countdown(){
+        if(timer < 0){
+            clearInterval(mytimer);
+        }else {
+            clock.textContent = timer;
+            timer = timer - 1;
+        }
+       }
+       
+    </script>
+</body>
+</html>

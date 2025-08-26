@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pract1.css">
+</head>
+<body>
+    <center>
+        <h1>Welcome to Edura</h1>
+        <h2>Web Development</h2>
+        <p>We are learning HTML & CSS</p>
+        <a href="https://bit.ly/2BPwXf0"><h4>Visit Google</h4></a>
+        <hr>
+        <img src="pict.jpg" width="250px" height="300px">
+        <hr>
+    </center>
+    <br><br>
+    <div class="animated-element"></div>
+    <hr>
+    <br><br>
+
+    <div id="coin">Hello</div>
+
+    <script>
+        let coin = document.getElementById("coin");
+        coin.onmouseout = function() {
+            coin.style.transform = "rotateY(180deg)";
+        }
+    </script>
+    
+</body>
+</html>

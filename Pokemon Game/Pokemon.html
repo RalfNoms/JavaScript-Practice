@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Simple Pokémon Game</title>
+    <style>
+      #pokemonContainer {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+      .pokemon {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+  }
+    </style>
+  </head>
+  <body>
+    <div id="pokemonContainer">
+      <div id="playerPokemon"></div>
+      <div id="enemyPokemon"></div>
+    </div>
+    <button id="battleButton">Battle</button>
+
+    <script src="Pokemon.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+
+}

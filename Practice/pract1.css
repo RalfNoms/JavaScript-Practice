@@ -1,0 +1,39 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    background-color: aqua;
+}
+.animated-element{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+@keyframes myAnimation {
+    0% {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+    50% {
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+    }
+    100% {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+  }
+  .animated-element {
+    animation: myAnimation 3s ease-in-out 1s infinite;
+  }
+  .animated-element {
+    width: 100px;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .animated-element:hover {
+    width: 200px;
+  }
+  

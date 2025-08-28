@@ -19,6 +19,7 @@
     
     <div id="content"></div>
     <div id="clock"></div>
+    <div id="arrColor"></div>
 
     <script>
         let content =  document.getElementById("content");
@@ -37,9 +38,28 @@
             clearInterval(mytimer);
         }else {
             clock.textContent = timer;
-            timer = timer - 1;
+            timer = timer - 1; // or timer -= 1 or timer--
         }
        }
+
+       let title = document.getElementById("arrColor");
+       let colors = ["red","green","blue","yellow","purple"];
+       title.style.color = colors[1];
+       title.textContent = colors[1];
+
+
+       //Exit a loop when traversing/ accessing an array by using names.length property to get exact elements of an array
+       let names = ["Morgan", "Riley", "Quinn", "Avery"];
+for(let i=0; i<names.length ; i=i+1){
+    console.log(names);
+}
+
+// change all names in the list to "sololearn"
+let arrname = ["Morgan", "Riley", "Quinn", "Avery"];
+for(let i=0; i<arrname.length ; i=i+1){
+    console.log(arrname[i] = "Sololearn");
+}
+      
        
     </script>
 </body>
